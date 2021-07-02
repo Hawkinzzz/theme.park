@@ -20,7 +20,7 @@
   --queue-color: #ffc230;
   --link-color: #ffc230;
   --link-color-hover: #fff;
-  --label-text-color: #fff;
+  --label-text-color: #313131;
     
   --text:#979797;
   --text-hover: #fff;
@@ -30,5 +30,20 @@
 [class*="Card-card-"], [class*="QualityProfiles-addQualityProfile-"] {
     background-color: rgba(0, 0, 0, .3);
     box-shadow: 0 0 10px 1px #2b2b2b;
-    color: var(--text);
+}
+
+.SeriesIndexPoster-title-1h3SR {
+    background-color: #2f2f2f;
+}
+
+.QualityDefinition-qualityDefinition-1DVWx {
+    border-top: 1px solid #808080;
+}
+
+.QualityDefinition-track-1BHRq:nth-child(odd) {
+    background-color: #a6a6a6;
+}
+
+.SeriesIndexPoster-nextAiring-2nqSB {
+    background-color: #202020;
 }

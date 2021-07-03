@@ -20,7 +20,7 @@
   --queue-color: #e25f02;
   --link-color: #e25f02;
   --link-color-hover: #fff;
-  --label-text-color: #fff;
+  --label-text-color: #1e1e1e;
     
   --text:#979797;
   --text-hover: #fff;
@@ -31,4 +31,16 @@
     background-color: rgba(0, 0, 0, .3);
     box-shadow: 0 0 10px 1px #2b2b2b;
     color: var(--text);
+}
+
+[class*="ProtocolLabel-usenet-"] {
+    border-color: #17b1d9 !important;
+    background-color: #17b1d9 !important;
+    color: #2b2b2b !important;
+}
+
+[class*="ProtocolLabel-torrent-"] {
+    border-color: #00853d !important;
+    background-color: #00853d !important;
+    color: #2b2b2b !important;
 }

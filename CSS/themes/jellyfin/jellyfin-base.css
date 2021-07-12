@@ -47,9 +47,6 @@ html {
     color: rgba(255,255,255,.87)
 }
 
-.pageTitleWithDefaultLogo {
-    background-image: url(https://theme-park.dev/Resources/emby/logowhite.png)
-}
 
 .backgroundContainer,.dialog,html {
     background: var(--theme-background)
@@ -96,6 +93,10 @@ html {
 .toast {
     background: var(--button-background);
     color: var(--theme-text-color)
+}
+.dialog-blur, .toast {
+    background: var(--button-background) !important;
+    color: var(--theme-text-color) !important;
 }
 
 @supports (backdrop-filter: blur(1em)) or (-webkit-backdrop-filter:blur(1em)) {
@@ -227,6 +228,11 @@ html {
 
 .listItem-focusscale:focus {
     background: rgba(54,54,54,.8)
+}
+
+.listItemIcon:not(.listItemIcon-transparent) {
+    background-color: var(--theme-primary-color);
+    color: #fff;
 }
 
 .progressring-spiner {
@@ -500,11 +506,6 @@ html {
 
 .recordingIcon-active {
     color: #c33!important
-}
-
-.drawerLogo {
-    background-image: url(https://theme-park.dev/Resources/emby/logowhite.png);
-    border-bottom-color: var(--line-background)
 }
 
 .searchTabsContainer {

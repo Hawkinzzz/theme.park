@@ -96,6 +96,11 @@ a:hover {
     color: var(--text-hover);
 }
 
+h1, h2, h3, h4, h5, h6,
+.custom-control-label,label,.modal-header {
+    color: var(--text-hover);
+}
+
 /* Form Stuff */
 
 .header-container input[type=text] {
@@ -133,7 +138,7 @@ a:hover {
 .form-control[readonly] {
     background-color: rgb(255 255 255 / 15%);
     opacity: .7;
-    color: var(--text);
+    color: #fff;
     border: 1px solid rgb(255 255 255 / 15%);
 }
 
@@ -199,21 +204,22 @@ a:hover {
 
 .sidebar-container .sidebar-button:active,
 .sidebar-container .sidebar-button:focus {
-    color: #fff !important;
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    color: rgb(var(--accent-color)) !important;
+    background-color: rgba(0, 0, 0, 0.15) !important;
 }
 
 .sidebar-container .sidebar-button:hover {
-    background-color: hsla(0, 0%, 100%, .08) !important;
-    color: var(--text-hover) !important;
+    background-color: transparent !important;
+    color: rgb(var(--accent-color)) !important;
 }
 .content-header.bg-dark .btn-dark:hover {
-    color:var(--text-hover) !important;
+    color:rgb(var(--accent-color));
     }
 
-.sidebar-container .sidebar-button.sb-active {
-    background-color: hsla(0, 0%, 100%, .08);
-    color: #fff !important;
+.sidebar-container .sidebar-button.sb-active,
+.sidebar-container .sidebar-button.sb-active:hover {
+    background-color: rgba(0, 0, 0, 0.15) !important;
+    color: rgb(var(--accent-color)) !important;
 }
 
 .content-header.bg-dark>button {
@@ -227,6 +233,10 @@ a:hover {
 .content-header.bg-dark .btn-dark {
     color:var(--text);
 }
+.btn-dark.disabled:hover, .btn-dark:disabled:hover {
+    color:var(--text) !important;
+}
+
 
 .sidebar-container .sidebar-collapse-box.active:before,
 .sidebar-container .sidebar-button.sb-active:before {
@@ -289,6 +299,9 @@ a:hover {
     background-color: transparent;
     border-top: 1px solid rgba(255, 255, 255, .1);
 }
+hr {
+    border-top: 1px solid rgb(255 255 255 / 10%);
+}
 
 
 .card {
@@ -340,7 +353,7 @@ a:hover {
 
 .text-truncate.badge.badge-secondary {
     color: var(--label-text-color);
-    background-color: var(--queue-color);
+    background-color: rgb(var(--accent-color));
 }
 
 .popover {
@@ -383,11 +396,13 @@ a:hover {
 }
 
 .modal-header {
+    background: var(--modal-header-color);
     border-bottom: 1px solid var(--accent-color);
 
 }
 
 .modal-footer {
+    background: var(--modal-footer-color);
     border-top: 1px solid var(--accent-color);
 }
 
@@ -592,6 +607,9 @@ a:hover {
 .custom-checkbox .custom-control-input:checked~.custom-control-label:after {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3E%3C/svg%3E");
 }
+input {
+    color: var(--text-hover) !important;
+}
 
 .custom-select:focus {
     border-color: rgb(var(--accent-color));
@@ -605,9 +623,9 @@ a:hover {
 }
 
 /* DROPDOWN MENU */
-.dropdown-menu {
+.dropdown-menu,.dropdown-header {
     color: var(--text);
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
 }
 
 .dropdown-item {
@@ -641,7 +659,7 @@ a:hover {
 }
 
 .selector__menu {
-    background: var(--modal-bg-color) !important;
+    background: var(--drop-down-menu-bg) !important;
     color: var(--text)
 }
 
@@ -740,11 +758,11 @@ line {
 }
 
 .alert-container .toast-container .toast .toast-body .progress .progress-bar {
-    text-shadow: -2px -2px 5px rgba(var(--accent-color),.15),2px -2px 5px rgba(var(--accent-color),.15),-2px 2px 5px rgba(var(--accent-color),.15),2px 2px 5px rgba(var(--accent-color),.15);
+    text-shadow: -2px -2px 5px rgba(var(--accent-color),.35),2px -2px 5px rgba(var(--accent-color),.35),-2px 2px 5px rgba(var(--accent-color),.35),2px 2px 5px rgba(var(--accent-color),.35);
     overflow: visible
 }
 .progress-bar-striped {
-    background-image: linear-gradient(45deg,rgba(var(--accent-color),.15) 25%,transparent 0,transparent 50%,rgba(var(--accent-color),.15) 0,rgba(var(--accent-color),.15) 75%,transparent 0,transparent);
+    background-image: linear-gradient(45deg,rgba(var(--accent-color),.5) 25%,transparent 0,transparent 50%,rgba(var(--accent-color),.5) 0,rgba(var(--accent-color),.5) 75%,transparent 0,transparent);
     background-size: 1rem 1rem
 }
 

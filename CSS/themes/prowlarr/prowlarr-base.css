@@ -109,9 +109,9 @@ a:hover {
 
 /* MODAL */
 [class*="ModalHeader-modalHeader-"] {
-    background: var(--modal-bg-color);
-    color: #fff;
-    border-bottom: var(--accent-color);
+    background: var(--modal-header-color);
+    color: var(--text-hover);
+    border-bottom: rgb(var(--accent-color));
 }
 
 [class*="ModalContent-modalContent-"] {
@@ -120,9 +120,9 @@ a:hover {
 }
 
 [class*="ModalFooter-modalFooter-"] {
-    background: var(--modal-bg-color);
+    background: var(--modal-footer-color);
     color: #fff;
-    border-top: 1px solid var(--accent-color);
+    border-top: 1px solid rgb(var(--accent-color));
 }
 
 [class*="ModalContent-closeButton-"]:hover {
@@ -157,8 +157,8 @@ a:hover {
 }
 
 [class*="CheckInput-primaryIsChecked-"] {
-    border-color: var(--accent-color) !important;
-    background-color: var(--accent-color) !important;
+    border-color: rgb(var(--accent-color)) !important;
+    background-color: rgb(var(--accent-color)) !important;
     color: var(--label-text-color) !important;
 }
 
@@ -208,20 +208,19 @@ a:hover {
     background-color: transparent;
 }
 
-[class*="PageSidebarItem-link-"]:hover,
-[class*="PageSidebarItem-link-"]:focus {
-    color: var(--text-hover) !important;
-    background-color: hsla(0, 0%, 100%, .08);
+[class*="PageSidebarItem-link-"]:hover {
+    color: rgb(var(--accent-color));
     text-decoration: none;
 }
 
-[class*="PageSidebarItem-isActiveLink-"] {
-    color: #FFF !important;
-    background-color: hsla(0, 0%, 100%, .08) !important;
+[class*="PageSidebarItem-isActiveLink-"],
+[class*="PageSidebarItem-isActiveLink-"]:hover, 
+[class*="PageSidebarItem-link-"]:focus {
+    color: rgb(var(--accent-color)) !important;
 }
 
 [class*="PageSidebarItem-isActiveParentLink-"] {
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 @media only screen and (max-width: 768px) {
@@ -231,13 +230,13 @@ a:hover {
 }
 
 [class*="PageSidebarItem-isActiveItem-"] {
-    border-left: 3px solid var(--accent-color);
+    border-left: 3px solid rgb(var(--accent-color));
 }
 
 /* MOVIES PAGE */
 /* RADARR SPECIFIC */
 [class*="MovieIndexPoster-controls-"] {
-    background-color: var(--accent-color) !important;
+    background-color: rgb(var(--accent-color)) !important;
 }
 
 /* OVERVIEW PAGE */
@@ -272,7 +271,7 @@ a:hover {
 }
 
 [class*=".ProgressBar-purple-"] {
-    background-color: var(--accent-color);
+    background-color: rgb(var(--accent-color));
 }
 
 /* MOVIE PAGE */
@@ -374,14 +373,14 @@ a:hover {
 }
 
 [class*="Label-default-"] {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
+    border-color: rgb(var(--accent-color));
+    background-color: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
 
 [class*="Label-info-"] {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
+    border-color: rgb(var(--accent-color));
+    background-color: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
 
@@ -392,7 +391,7 @@ a:hover {
 }
 
 [class*="MovieDetails-selectedTab-"] {
-    border-bottom: 4px solid var(--accent-color);
+    border-bottom: 4px solid rgb(var(--accent-color));
 }
 
 [class*="MovieDetails-tabList-"] {
@@ -448,11 +447,11 @@ a:hover {
 }
 
 [class*="PageToolbarButton-toolbarButton-"]:hover {
-    color: var(--text-hover);
+    color: rgb(var(--accent-color));
 }
 
 [class*="MenuButton-menuButton-"]:hover {
-    color: var(--text-hover);
+    color: rgb(var(--accent-color));
 }
 
 /* POSTERS */
@@ -468,7 +467,7 @@ a:hover {
 /* LIBRARY TOP HEADER DROPDOWN */
 [class*="MenuItem-menuItem-"],
 [class*="MenuContent-menuContent-"] {
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
     color: var(--text);
 }
 
@@ -508,7 +507,7 @@ a:hover {
 [class*="EnhancedSelectInput-options-"] {
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
     color: var(--text);
 }
 [class*="EnhancedSelectInputOption-isSelected-"],
@@ -632,8 +631,8 @@ input:focus:-ms-input-placeholder {
 /* IMPORT */
 
 [class*="FieldSet-legend-"] {
-    color: #FFF;
-    border-bottom: 1px solid var(--accent-color);
+    color: var(--text-hover);
+    border-bottom: 1px solid rgb(var(--accent-color));
 }
 
 [class*="VirtualTableRow-row-"]:hover {
@@ -815,12 +814,21 @@ input:focus:-ms-input-placeholder {
 }
 
 /* SETTINGS */
-[class*="PageContentBody-innerContentBody-"] [class*="Link-to-"] {
-    color: #fff;
+[class*="Settings-link-"] {
+    color: var(--text-hover);
+    border-bottom: 1px solid rgb(var(--accent-color));
 }
 
 [class*="Settings-summary-"] {
     color: var(--text);
+}
+
+[class*="FormLabel-large-"] {
+    color: var(--text-hover);
+}
+
+[class*="FormLabel-isAdvanced-"] {
+    color: #ff902b;
 }
 
 /* MEDIA MANAGEMENT - FILE NAME TOKENS */

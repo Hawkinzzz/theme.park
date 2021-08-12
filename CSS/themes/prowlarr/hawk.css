@@ -1,8 +1,3 @@
 /* prowlarr ORGANIZR-DARK THEME */
 @import url(https://themes.hawk.ws/CSS/themes/prowlarr/prowlarr-base.css);
-@import url(https://themes.hawk.ws/CSS/variables/prowlarr.css);
-
-/* APP VARS */
-:root {
-  --queue-color: #2cabe3;
-  }
+@import url(https://themes.hawk.ws/CSS/variables/hawk.css);

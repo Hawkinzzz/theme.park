@@ -1,2 +1,15 @@
 @import url(https://themes.hawk.ws/CSS/themes/sonarr/sonarr-base.css);
 @import url(https://themes.hawk.ws/CSS/variables/hawk.css);
+
+:root {
+  --button-color: #2cabe3;
+  --button-color-hover: rgb(44 171 227 / .8);
+  --button-text: #eee;
+  --button-text-hover: #fff;
+
+  --accent-color:  44, 171, 227;
+  --accent-color-hover: rgb(var(--accent-color),.8);
+  --link-color: #2cabe3;
+  --link-color-hover: #3cc5ff;
+  --label-text-color: #fff;
+}

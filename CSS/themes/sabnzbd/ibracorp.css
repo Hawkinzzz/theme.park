@@ -1,0 +1,25 @@
+@import url(https://theme-park.dev/CSS/themes/sabnzbd/sabnzbd-base.css);
+:root {
+  --main-bg-color: #2d2d2d;
+  --modal-bg-color: #262A2B;
+  --settings-accent-color: #E94B3C;
+  --nav-button-color: #2d2d2d;
+  --default-button-color: #535353;
+  --default-button-color-hover: rgba(227, 44, 44, .8);
+  --default-button-color-active: rgba(227, 44, 44, .8);
+  }
+
+.label-danger {
+    background-color: #E94B3C;
+}
+
+.info-container {
+    color: #46FFAF;
+}
+
+.btn-default {
+    color: #00faff;
+    background: var(--default-button-color);
+    border-color: #00000000 !important;
+    outline: none !important;
+}

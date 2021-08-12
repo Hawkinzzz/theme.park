@@ -1,0 +1,24 @@
+:root {
+  --main-bg-color: #2f2f2f;
+
+  --modal-bg-color: #1f1f1f;
+  --modal-header-color: #1b1b1b;
+  --modal-footer-color: #1b1b1b;
+
+  --drop-down-menu-bg: #262626;
+
+  --button-color: #505050;
+  --button-color-hover: rgba(227, 148, 44, .8);
+  --button-text: #dfdfdf;
+  --button-text-hover: #fff;
+
+  --accent-color:  232, 106, 18;
+  --accent-color-hover: white;
+  --link-color: #ff6430;
+  --link-color-hover: #e87612;
+  --label-text-color: #fff;
+    
+  --text:#d7d7d7;
+  --text-hover: #fff;
+  --text-muted: #999;
+}

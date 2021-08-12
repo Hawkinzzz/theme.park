@@ -1,0 +1,48 @@
+@import url(https://theme-park.dev/CSS/themes/sonarr/sonarr-base.css);
+:root {
+  --main-bg-color: #3e3e3e;
+  --modal-bg-color: #242424;
+
+  --calendar-in-cinemas: 53, 197, 244;
+  --calendar-downloading: 122 67 182; 
+  --calendar-unmonitored: 173 173 173;
+  --calendar-unaired: 93 156 236;  
+  --calendar-missing: 240 80 80;
+  --calendar-available: 39 194 76;
+
+  --button-color: #505050;
+  --button-color-hover: rgba(44, 197, 227, .8);
+  --button-text: #dfdfdf;
+  --button-text-hover: #fff;
+
+  --accent-color:  #00ccff;
+  --accent-color-hover: white;
+  --queue-color: #00ccff;
+  --link-color: #00ccff;
+  --link-color-hover: #fff;
+  --label-text-color: #242424;
+  --text:#9f9f9f;
+  --text-hover: #fff;
+  --text-muted: #999;
+  }
+
+[class*="Card-card-"], [class*="QualityProfiles-addQualityProfile-"] {
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 0 0 10px 1px #2b2b2b;
+}
+
+.SeriesIndexPoster-title-1h3SR {
+    background-color: #2f2f2f;
+}
+
+.QualityDefinition-qualityDefinition-1DVWx {
+    border-top: 1px solid #808080;
+}
+
+.QualityDefinition-track-1BHRq:nth-child(odd) {
+    background-color: #a6a6a6;
+}
+
+.SeriesIndexPoster-nextAiring-2nqSB {
+    background-color: #202020;
+}

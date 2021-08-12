@@ -1,0 +1,30 @@
+@import url(https://theme-park.dev/CSS/themes/sonarr/sonarr-base.css);
+:root {
+  --main-bg-color: #2d2d2d;
+  --modal-bg-color: #262A2B;
+
+  --calendar-tv-unaired-premiere: 53 197 244;
+  --calendar-tv-downloading: 122 67 182; 
+  --calendar-tv-unmonitored: 173 173 173;
+  --calendar-tv-unaired: 93 156 236;  
+  --calendar-tv-missing: 240 80 80;
+  --calendar-tv-on-air: 255 165 0; 
+  --calendar-tv-available: 39 194 76;
+  
+  --button-color: #2cabe3;
+  --button-color-hover: rgb(44 171 227 / .8);
+  --button-text: #eee;
+  --button-text-hover: #fff;
+
+  --accent-color:  #E94B3C;
+  --accent-color-hover: white;
+  --queue-color: #2cabe3;
+  --link-color: #00FAFF;
+  --link-color-hover: #46FFAF;
+  --label-text-color: #ececec;
+    
+  --text:#cecece;
+  --text-hover: #46FFAF;
+  --text-muted: #999;
+  }
+}

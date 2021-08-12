@@ -12,6 +12,13 @@
 
 .bg-light {
     background: var(--main-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 /* Scrollbar */
@@ -25,7 +32,14 @@
     body {
         overflow-y: auto;
         height: 100%;
-        background: var(--main-bg-color)
+        background: var(--main-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
     }
 }
 
@@ -64,10 +78,13 @@ body,
 
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .show>.nav-link,
 .col-form-label {
     color: var(--text-hover);
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(var(--accent-color));
 }
 
 .card-header {
@@ -90,7 +107,6 @@ code {
 /* LINKS */
 a {
     color: var(--link-color);
-    text-decoration: underline;
 }
 
 a:hover {
@@ -102,9 +118,29 @@ a:hover {
     background: rgba(0, 0, 0, .15) !important;
 }
 
+.navbar-dark .navbar-brand {
+    color: rgb(var(--accent-color));
+}
+
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover {
+    color: var(--accent-color-hover);
+}
+
 /* DROPDOWN MENU */
 .dropdown-menu {
-    background: var(--modal-bg-color);
+    background: var(--drop-down-menu-bg);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+.dropdown-header {
+    color: var(--text-hover);
 }
 
 .dropdown-item:focus,
@@ -163,16 +199,23 @@ a:hover {
 .btn-primary:hover,
 .btn-outline-dark:hover,
 .btn-outline-secondary:hover,
-.btn-check:focus+.btn-primary, .btn-primary:focus {
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
     color: var(--button-text-hover);
     background-color: var(--button-color-hover);
     border-color: var(--button-color-hover);
 }
-.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, 
-.btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus,
-.btn-check:focus+.btn-primary, .btn-primary:focus {
-    box-shadow: 0 0 0 0.25rem rgba(var(--accent-color),.5);
+
+.btn-check:active+.btn-primary:focus,
+.btn-check:checked+.btn-primary:focus,
+.btn-primary.active:focus,
+.btn-primary:active:focus,
+.show>.btn-primary.dropdown-toggle:focus,
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--accent-color), .5);
 }
+
 .btn-outline-primary,
 .btn-outline-info {
     color: var(--button-color);
@@ -211,7 +254,97 @@ a:hover {
 .btn-outline-info.dropdown-toggle.show:focus,
 .btn-outline-info:active:focus {
     box-shadow: 0 0 0 0.25rem rgb(var(--accent-color), .5);
+    color: var(--button-text-hover);
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
 }
+
+.btn-outline-info:not(:disabled):not(.disabled).active:focus,
+.btn-outline-info:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-info.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgb(var(--accent-color) / 50%);
+}
+
+.btn-outline-info:not(:disabled):not(.disabled).active,
+.btn-outline-info:not(:disabled):not(.disabled):active,
+.show>.btn-outline-info.dropdown-toggle {
+    color: var(--button-text-hover);
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+}
+
+.btn-outline-primary {
+    color: var(--button-color);
+    border-color: var(--button-color);
+}
+
+.btn-outline-primary:hover {
+    color: var(--button-text-hover);
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+}
+
+.btn-outline-primary.focus,
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+    color: var(--button-color);
+    background-color: transparent
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show>.btn-outline-primary.dropdown-toggle {
+    color: var(--button-text-hover);
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(var(--accent-color), .5)
+}
+
+.btn-outline-dark {
+    color: var(--button-text);
+    border-color: var(--button-color);
+}
+
+.btn-outline-dark:hover {
+    color: var(--button-text-hover);
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+}
+
+.btn-outline-dark.focus,
+.btn-outline-dark:focus {
+    box-shadow: 0 0 0 .2rem rgba(var(--accent-color), .5)
+}
+
+.btn-outline-dark.disabled,
+.btn-outline-dark:disabled {
+    color: var(--button-color);
+    background-color: transparent
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled).active,
+.btn-outline-dark:not(:disabled):not(.disabled):active,
+.show>.btn-outline-dark.dropdown-toggle {
+    color: var(--button-text-hover);
+    border-color: var(--button-color-hover);
+    background-color: var(--button-color-hover);
+}
+
+.btn-outline-dark:not(:disabled):not(.disabled).active:focus,
+.btn-outline-dark:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-dark.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(52, 58, 64, .5)
+}
+
 
 /* FORMS */
 .form-control {

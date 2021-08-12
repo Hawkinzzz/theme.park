@@ -12,6 +12,13 @@
 
 body {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     color: var(--text) !important;
 }
 
@@ -25,15 +32,25 @@ body {
     body {
         overflow-y: auto;
         height: 100%;
-        background: var(--main-bg-color)
+        background: var(--main-bg-color);
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
     }
 }
+
 body *::-webkit-scrollbar-thumb {
-    background: hsla(0,0%,100%,.2);
+    background: hsla(0, 0%, 100%, .2);
 }
+
 body *:hover::-webkit-scrollbar-thumb {
     background: hsla(0, 0%, 100%, 0.4);
 }
+
 ::-webkit-scrollbar {
     width: 14px;
 }
@@ -71,9 +88,22 @@ a:hover {
 a:-webkit-any-link:focus {
     outline: none;
 }
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     color: var(--text-hover)
 }
+
 /* LOGIN PAGE */
 
 .login .login__form .text-center .h-6 {
@@ -200,6 +230,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background: rgb(var(--accent-color));
     color: var(--label-text-color);
 }
+
 .toast--success {
     background-color: rgba(90, 173, 99, 0.75);
 }
@@ -263,7 +294,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-color: #F44336;
 }
 
-.btn-icon--green,.icon--green {
+.btn-icon--green,
+.icon--green {
     color: var(--button-color);
 }
 
@@ -271,6 +303,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .dropdown-menu {
     color: var(--text);
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     background-clip: padding-box;
     border: 1px solid rgba(0, 40, 100, 0.12);
     border-radius: 3px;
@@ -286,21 +325,34 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     text-decoration: none;
     background-color: rgb(255 255 255 / 0.08);
 }
+
 .select__menu {
     background: var(--modal-bg-color) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, .5);
 }
-.select__option:hover  {
+
+.select__option:hover {
     background: rgba(255, 255, 255, .08) !important;
 }
-.select__option  {
+
+.select__option {
     background: rgba(0, 0, 0, 0) !important;
     border-bottom: solid rgba(255, 255, 255, .1) 1px;
 }
+
 .select__multi-value__remove {
     color: black;
 }
-.basic-multi-select .select__control--is-focused, .basic-multi-select .select__control--is-focused:hover {
+
+.basic-multi-select .select__control--is-focused,
+.basic-multi-select .select__control--is-focused:hover {
     border-color: transparent !important;
 }
 
@@ -312,6 +364,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .setup__progress-wrap {
     background-color: rgb(0 0 0 / 50%);
 }
+
 .setup__logo {
     filter: invert(1);
 }
@@ -348,7 +401,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     color: var(--text)
 }
 
-.logs__no-data{
+.logs__no-data {
     color: var(--text);
     background-color: transparent;
 }
@@ -383,7 +436,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.ReactTable .rt-thead .rt-th, .ReactTable .rt-thead .rt-td,
+.ReactTable .rt-thead .rt-th,
+.ReactTable .rt-thead .rt-td,
 .logs__cell--header__container {
     color: var(--text-hover);
 }
@@ -392,7 +446,10 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-bottom: solid 1px rgb(255 255 255 / 20%);
 }
 
-.table th, .text-wrap table th, .table td, .text-wrap table td {
+.table th,
+.text-wrap table th,
+.table td,
+.text-wrap table td {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
@@ -473,7 +530,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border-color: transparent;
 }
 
-.checkbox__input:checked + .checkbox__label:before {
+.checkbox__input:checked+.checkbox__label:before {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMi4zIDkuMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiPjxwYXRoIGQ9Ik0xMS44IDAuNUw1LjMgOC41IDAuNSA0LjIiLz48L3N2Zz4=);
     background-color: rgb(var(--accent-color));
 
@@ -483,14 +540,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .custom-radio .custom-control-input:disabled:checked~.custom-control-label::before {
     background-color: rgb(var(--accent-color));
 }
+
 .custom-control-input:focus~.custom-control-label::before,
 .custom-radio .custom-control-input:disabled:checked~.custom-control-label::before {
-    -webkit-box-shadow: 0 0 0 1px rgb(var(--accent-color)), 0 0 0 2px rgb(var(--accent-color),.25);
-    box-shadow: 0 0 0 1px rgb(var(--accent-color)), 0 0 0 2px rgb(var(--accent-color),.25);
+    -webkit-box-shadow: 0 0 0 1px rgb(var(--accent-color)), 0 0 0 2px rgb(var(--accent-color), .25);
+    box-shadow: 0 0 0 1px rgb(var(--accent-color)), 0 0 0 2px rgb(var(--accent-color), .25);
 }
+
 /* MODALS */
 .modal-content {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .ReactModal__Overlay--after-open {
@@ -509,6 +575,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
     .ReactModal__Content {
         background: var(--modal-bg-color) !important;
+        background-repeat: repeat, no-repeat;
+        background-attachment: fixed, fixed;
+        background-position: center center, center center;
+        background-size: auto, cover;
+        -webkit-background-size: auto, cover;
+        -moz-background-size: auto, cover;
+        -o-background-size: auto, cover;
         border: 1px solid transparent !important;
     }
 }

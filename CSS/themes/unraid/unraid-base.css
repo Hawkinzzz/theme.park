@@ -11,11 +11,33 @@
 /* 			      https://github.com/gilbN/theme.park			 */
 
 * {
-    outline: none; 
+    outline: none;
 }
+
 body {
     color: var(--text);
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+    color: var(--text-hover);
+}
+
+i.fa.fa-fw {
+    color: var(--text-hover) !important;
 }
 
 a,
@@ -33,10 +55,24 @@ i.control:hover {
 
 #template {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 #menu {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 #header .text-left {
@@ -102,9 +138,11 @@ span.inner {
     width: 137px !important;
 }
 
-thead.sortable,thead,table.tablesorter thead tr th {
-    color: var(--text-hover);   
-   }
+thead.sortable,
+thead,
+table.tablesorter thead tr th {
+    color: var(--text-hover);
+}
 
 .sys,
 .usage-disk,
@@ -116,10 +154,11 @@ thead.sortable,thead,table.tablesorter thead tr th {
     background-color: #4caf50
 }
 
-#db-box3 > tbody.smb.share.share1.sortable > tr > td > a {
+#db-box3>tbody.smb.share.share1.sortable>tr>td>a {
     color: var(--link-color);
 }
-#db-box3 > tbody.smb.share.share1.sortable > tr > td > a:hover {
+
+#db-box3>tbody.smb.share.share1.sortable>tr>td>a:hover {
     color: var(--link-color-hover);
 }
 
@@ -256,21 +295,40 @@ label.checkbox input:checked~.checkmark {
 .logLine.spacing {
     color: var(--text);
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 #sb-info-inner,
 #sb-loading-inner,
-div.sb-message,
-#sb-title,
-#sb-title-inner {
+div.sb-message {
     color: var(--text);
     background-color: transparent;
 }
+
+#sb-title,
+#sb-title-inner {
+    color: var(--text-hover);
+    background-color: transparent;
+}
+
 
 #sb-wrapper {
     border: 1px rgba(0, 0, 0, 0) solid;
     color: var(--text);
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 #sb-loading,
@@ -288,12 +346,26 @@ div.Panel i.PanelIcon {
 div.tab [type=radio]:checked+label,
 div.tab [type=radio]+label:hover {
     border: 1px solid var(--accent-color-hover);
+    color: var(--text-hover);
+}
+
+div.tab [type=radio]+label {
+    border: 1px solid rgb(255 255 255 / 25%);
+    background-color: rgb(0 0 0 / 50%);
+    opacity: 0.5;
 }
 
 /* FOOTER */
 #footer {
     color: var(--text);
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 /* CA */
@@ -301,6 +373,7 @@ div.tab [type=radio]+label:hover {
     background-color: rgb(0 0 0 / 10%) !important;
     border-color: rgb(0 0 0 / 25%) !important;
 }
+
 .ca_holderDocker::before {
     color: rgb(255 255 255 / 40%) !important;
 }
@@ -308,17 +381,19 @@ div.tab [type=radio]+label:hover {
 .selectedMenu {
     color: rgb(var(--accent-color)) !important;
 }
+
 .hoverMenu {
     color: var(--link-color-hover) !important;
 }
 
-.ca_descriptionArea:hover,a.ca_repoPopup:hover {
-    color: var(--text-hover) !important;
+.ca_descriptionArea:hover,
+a.ca_repoPopup:hover {
+    color: var(--button-text-hover) !important;
 }
 
 .ca_templatesDisplay .ca_holderFav {
-    background: var(--button-color-hover) !important;
-    color: var(--text-hover) !important;
+    background: rgb(var(--accent-color), .7) !important;
+    color: var(--label-text-color) !important;
 }
 
 a.ca_appreadmore:hover {
@@ -372,11 +447,25 @@ li.caMenuItem:hover {
 div.frame,
 div.tabs {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 /*DROPDOWN MENU*/
 .dropdown-menu {
     background: var(--drop-down-menu-bg) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .dropdown-menu a {
@@ -418,9 +507,16 @@ div.shade-black {
     background: var(--modal-bg-color) !important;
 } */
 
-.showSweetAlert,
+.showSweetAlert:not([data-has-cancel-button="false"]),
 .swal-overlay--show-modal .swal-modal {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .sweet-alert h2,
@@ -434,15 +530,22 @@ div.shade-black {
 /*HELP TEXT*/
 
 blockquote {
-    border-top: 2px solid rgb(255 255 255 / 25%);
-    border-bottom: 2px solid rgb(255 255 255 / 25%);
+    border-top: 2px solid rgb(0 0 0 / 25%);
+    border-bottom: 2px solid rgb(0 0 0 / 25%);
     color: var(--text);
-    background-color: rgb(255 255 255 / 10%);
+    background-color: rgb(0 0 0 / 10%);
 }
 
 /* MY SERVERS */
 .UnraidUPC .--hasBanner-custom .UnraidUPC-dropdown {
-    background-color: var(--drop-down-menu-bg) !important;
+    background: var(--drop-down-menu-bg) !important;
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 50%) !important;
     -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 transparent), var(--tw-ring-shadow, 0 0 transparent), var(--tw-shadow);
@@ -481,7 +584,7 @@ unraid-authed::part(div[data-v-050c892a] > button) {
 #contDescription {
     background: rgb(0 0 0 / 25%);
     padding: 1%;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 dt {

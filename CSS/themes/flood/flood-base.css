@@ -31,6 +31,13 @@ body,
 .torrents {
     color: var(--text);
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 /* TEXT */
@@ -47,8 +54,18 @@ h4,
 h5,
 h6,
 p,
-.inverse .h1, .inverse .h2, .inverse .h3, .inverse .h4, .inverse .h5, .inverse .h6, .inverse h1, .inverse h2, .inverse h3, .inverse h4, .inverse h5, .inverse h6
-.dark .torrents__alert,
+.inverse .h1,
+.inverse .h2,
+.inverse .h3,
+.inverse .h4,
+.inverse .h5,
+.inverse .h6,
+.inverse h1,
+.inverse h2,
+.inverse h3,
+.inverse h4,
+.inverse h5,
+.inverse h6 .dark .torrents__alert,
 .torrents__alert {
     color: var(--text-hover);
 }
@@ -57,6 +74,13 @@ p,
 
 .application__view--auth-form {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 
@@ -210,6 +234,13 @@ p,
 .context-menu__items,
 .menu {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05), 0 1px 3px 1px rgba(0, 0, 0, .1), 0 0 0 1px rgba(0, 0, 0, .1);
     color: var(--text);
@@ -320,6 +351,7 @@ p,
     color: #39ce83;
     font-weight: 500;
 }
+
 .dark .torrent--is-condensed.torrent--is-selected .torrent__detail,
 .torrent--is-condensed.torrent--is-selected .torrent__detail,
 .dark .torrent--is-condensed.torrent--is-selected.torrent--is-stopped .torrent__detail,
@@ -393,8 +425,7 @@ p,
 
 .dark .torrent-details__table__heading--primary,
 .torrent-details__table__heading--primary,
-.dark .torrent-details__table__heading--secondary
-.torrent-details__table__heading--secondary,
+.dark .torrent-details__table__heading--secondary .torrent-details__table__heading--secondary,
 .dark .torrent-details__table__heading--tertiary,
 .torrent-details__table__heading--tertiary {
     color: var(--text-hover);
@@ -416,6 +447,13 @@ p,
 /* TOB NAVBAR */
 .action-bar {
     background: var(--main-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     color: var(--text);
 }
@@ -452,9 +490,13 @@ p,
     box-shadow: 1px 0 hsl(0deg 0% 100% / 12%);
     color: var(--text);
 }
-.sidebar-filter__item--heading, .sidebar-filter__item--heading:focus-visible, .sidebar-filter__item--heading:hover {
+
+.sidebar-filter__item--heading,
+.sidebar-filter__item--heading:focus-visible,
+.sidebar-filter__item--heading:hover {
     color: var(--text-hover) !important;
 }
+
 .dark .sidebar-filter__item,
 .sidebar-filter__item {
     color: var(--text);
@@ -487,9 +529,9 @@ p,
     color: var(--label-text-color);
 }
 
-.dark .sidebar-filter__item:focus-visible .icon, 
+.dark .sidebar-filter__item:focus-visible .icon,
 .dark .sidebar-filter__item:hover .icon,
-.sidebar-filter__item:focus-visible .icon, 
+.sidebar-filter__item:focus-visible .icon,
 .sidebar-filter__item:hover .icon {
     fill: rgb(var(--accent-color));
 }
@@ -537,6 +579,7 @@ p,
 .torrent--is-selected.torrent--is-stopped .progress-bar__icon .icon {
     color: #ffffff;
 }
+
 .torrent--is-selected.torrent--is-stopped .progress-bar__fill {
     background: #ffffff;
 }
@@ -565,6 +608,13 @@ p,
 .modal__content__wrapper,
 .modal__header {
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
     color: var(--text)
 }
 
@@ -575,6 +625,13 @@ p,
 .modal--vertical.modal--tabs-in-header .modal__header {
     box-shadow: inset -1px 0 0 rgba(255, 255, 255, .1);
     background: var(--modal-bg-color);
+    background-repeat: repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: center center, center center;
+    background-size: auto, cover;
+    -webkit-background-size: auto, cover;
+    -moz-background-size: auto, cover;
+    -o-background-size: auto, cover;
 }
 
 .modal--vertical.modal--tabs-in-header .modal__header,
@@ -587,6 +644,7 @@ p,
 .modal__tabs .modal__tab.is-active:after {
     background: rgb(var(--accent-color));
 }
+
 .modal--vertical .modal__tabs .modal__tab:after {
     width: 3px;
 }

@@ -1,3 +1,16 @@
 /* prowlarr ORGANIZR-DARK THEME */
 @import url(https://themes.hawk.ws/CSS/themes/prowlarr/prowlarr-base.css);
 @import url(https://themes.hawk.ws/CSS/variables/hawk.css);
+
+:root {
+  --button-color: #505050;
+  --button-color-hover: rgba(227, 148, 44, .8);
+  --button-text: #dfdfdf;
+  --button-text-hover: #fff;
+
+  --accent-color:  232, 106, 18;
+  --accent-color-hover: white;
+  --link-color: #ff6430;
+  --link-color-hover: #e87612;
+  --label-text-color: #fff;
+}

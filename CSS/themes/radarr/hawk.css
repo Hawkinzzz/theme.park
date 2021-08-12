@@ -1,2 +1,15 @@
-@import url(https://themes.hawk.ws/CSS/themes/radarr/radarr-base.css);
+@import url(https://themes.hawk.ws/CSS/themes/sonarr/radarr-base.css);
 @import url(https://themes.hawk.ws/CSS/variables/hawk.css);
+
+:root {
+    --button-color: #505050;
+    --button-color-hover: rgba(227, 221, 44, .8);
+    --button-text: #dfdfdf;
+    --button-text-hover: #fff;
+
+    --accent-color: 255, 194, 48;
+    --accent-color-hover: white;
+    --link-color: #ffa930;
+    --link-color-hover: #ffc230;
+    --label-text-color: #fff;
+}
